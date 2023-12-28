@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on k9blog</title>
+    <link>https://Ky9oss.github.io/tags/</link>
+    <description>Recent content in Tags on k9blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Dec 2023 14:20:16 +0800</lastBuildDate>
+    <atom:link href="https://Ky9oss.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>flyrise</title>
+      <link>https://Ky9oss.github.io/tags/flyrise/</link>
+      <pubDate>Thu, 28 Dec 2023 14:20:16 +0800</pubDate>
+      <guid>https://Ky9oss.github.io/tags/flyrise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>loginbypass</title>
+      <link>https://Ky9oss.github.io/tags/loginbypass/</link>
+      <pubDate>Thu, 28 Dec 2023 14:20:16 +0800</pubDate>
+      <guid>https://Ky9oss.github.io/tags/loginbypass/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
