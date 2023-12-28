@@ -6,8 +6,15 @@
     <description>Recent content in Series on k9blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Dec 2023 14:20:16 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Dec 2023 01:55:48 +0800</lastBuildDate>
     <atom:link href="https://Ky9oss.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java</title>
+      <link>https://Ky9oss.github.io/series/java/</link>
+      <pubDate>Fri, 29 Dec 2023 01:55:48 +0800</pubDate>
+      <guid>https://Ky9oss.github.io/series/java/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Vulnerability Recurrence</title>
       <link>https://Ky9oss.github.io/series/vulnerability-recurrence/</link>

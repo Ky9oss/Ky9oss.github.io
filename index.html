@@ -74,7 +74,7 @@
 <meta property="og:url" content="https://Ky9oss.github.io/" />
 
 
-<meta property="og:updated_time" content=28012-28-02T1220:16:23&#43;0800 />
+<meta property="og:updated_time" content=29012-29-01T1255:48:23&#43;0800 />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='https://Ky9oss.github.io/sitemap.xml' />
@@ -199,8 +199,14 @@
                 
                         
                 
+                        
+                
             
                 
+                
+                        
+                
+                        
                 
                         
                 
@@ -227,6 +233,10 @@
                         </li>
                         
                             <li class="bullet">
+                                <a href="https://Ky9oss.github.io/posts/java-class%E6%96%87%E4%BB%B6%E7%BB%86%E8%8A%82%E5%89%96%E6%9E%90/">Java Class文件细节剖析</a>
+                            </li>
+                        
+                            <li class="bullet">
                                 <a href="https://Ky9oss.github.io/posts/cve-2023-51385/">CVE-2023-51385</a>
                             </li>
                         
@@ -242,8 +252,14 @@
                 
                         
                 
+                        
+                
             
                 
+                
+                        
+                
+                        
                 
                         
                 
@@ -295,6 +311,58 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="posts">
     
     
+    <article class="post">
+        <div class="info">
+    <h1 class="post-title">
+        <a href="https://Ky9oss.github.io/posts/java-class%E6%96%87%E4%BB%B6%E7%BB%86%E8%8A%82%E5%89%96%E6%9E%90/">Java Class文件细节剖析</a>
+    </h1>
+    
+        <time datetime="2023-12-29T01:55:48&#43;0800" class="post-date">
+            December 29, 2023
+        </time>
+    
+    
+    <ul class="tags">
+        
+        <li class="tag-java">
+            <a href="https://Ky9oss.github.io/tags/java">java</a>
+        </li>
+        
+        <li class="tag-basics">
+            <a href="https://Ky9oss.github.io/tags/basics">basics</a>
+        </li>
+        
+    </ul>
+    
+    
+    
+    
+        <p class="seriesname">
+            Series: <a href="https://Ky9oss.github.io/series/java">Java</a>
+        </p>
+    
+    
+    
+</div>
+
+        
+        Class文件 Class文件主要分为以下几个部分：
+魔数（magic number） 版本号（minor&amp;major version） 常量池（constant pool） 访问标记（access flag） 类索引（this class） 超类索引（super class） 接口表索引（interface） 字段表（field） 方法表（method） 属性表（attribute） class文件的基本结构
+classFile{ u4 magic; u2 minor_version; u2 major_version; u2 constant_pool_count; cp_info constant_pool[constant_pool_count-1]; u2 access_flags; u2 this_class; u2 super_class; u2 interfaces_count; u2 interfaces[interfaces_count]; u2 fields_count; field_info fields[fields_count]; u2 methods_count; method_info methods[methods_count]; u2 attributes_count; attribute_info attributes[attributes_count]; } u2、u4，u8三种数据结构分别表示占用2、4、8字节的无符号整数。法表的类型就是method_info，常量池的类型就是cp_info
+magic number 就是文件头
+version 副版本号（2字节）+主版本号（2字节）
+只有jdk 1.1版本的副版本号为00 03，后续的版本都是副版本为00 00，而且除1.1版本外，后续每次发布新版本时只变动主版本号，主版本号每次加1
+constant pool 在Java代码中，如果涉及到一些数字的操作，对于占用字节比较少的整数类型，这些简单数字的操作被枚举成了具体的指令，嵌入到了字节码中。但对于一些比较大的数字（主要是那些无法用4个字节表示的类型，例如float、double等类型），则会被记录在常量池中，当需要使用这些操作数的时候，会根据索引值到常量池中来查取。
+当整型变量以final修饰时，它被声明为一个常量，此时才会加入常量池。
+constant_pool中每一个cp_info元素又可分为两个部分：
+tag：通常为1个字节，用于表示该常量项的类型； info：该常量项的具体内容，根据不同类型的实际数据占用不同的字节长度； access flag 就是类上的修饰符，如final、abstract等 this class 类索引保存的是一个与类相关的索引，指向的数据是前面提到的常量池。
+        
+        <div class="read-more-link">
+            <a href="/posts/java-class%E6%96%87%E4%BB%B6%E7%BB%86%E8%8A%82%E5%89%96%E6%9E%90/">Read More…</a>
+        </div>
+        
+        
+    </article>
     <article class="post">
         <div class="info">
     <h1 class="post-title">
