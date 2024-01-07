@@ -25,6 +25,13 @@ constant_pool中每一个cp_info元素又可分为两个部分：
 tag：通常为1个字节，用于表示该常量项的类型； info：该常量项的具体内容，根据不同类型的实际数据占用不同的字节长度； access flag 就是类上的修饰符，如final、abstract等 this class 类索引保存的是一个与类相关的索引，指向的数据是前面提到的常量池。</description>
     </item>
     <item>
+      <title>Computer Vision</title>
+      <link>https://Ky9oss.github.io/posts/cv_test/</link>
+      <pubDate>Thu, 28 Dec 2023 14:20:16 +0800</pubDate>
+      <guid>https://Ky9oss.github.io/posts/cv_test/</guid>
+      <description>1-4 Harris corner detector：Robust against shift/rotation transformations and brightness changes. But Not robust against scale changes. LoG 图像 SIFT: Can handle changes in viewpoint and illumination SURF: fast / less sensitive to noise Nearest neighbor matching: One feature matches to another if those features are nearest neighbors and their distance is below some threshold. Canny edge detector Applying low- and high-pass filtering Non-maximum suppression Double thresholding SIFT key point Descriptor Construction in SIFT 2-1 RANSAC Hough Transform K-means Clustering Advantages Only One parameter need to choose (window size) Generic technique simple Drawbacks Selection of window size is important Does not scale well with dimension increase 大熊猫 2-2 2-3 uniqueness constraint ordering constraints depth from disparity effect of window size 3-1 Lucas-Kanade 3-2 Semantic segmentation vs Instance segmentation training and testing phases in statistical learning framework Nearest neighbor classifiers vs.</description>
+    </item>
+    <item>
       <title>CVE-2023-51385</title>
       <link>https://Ky9oss.github.io/posts/cve-2023-51385/</link>
       <pubDate>Thu, 28 Dec 2023 14:20:16 +0800</pubDate>
